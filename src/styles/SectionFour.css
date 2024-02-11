@@ -1,0 +1,64 @@
+.section__four {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 150px auto;
+}
+.section__four::before {
+    content: "";
+    position: absolute;
+    top: -280px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 150px);
+    background-color: #C5B0A3;
+    -webkit-clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0% 100%);
+clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0% 100%);
+    z-index: -1;
+}
+.section__four__image {
+    margin: 40px auto;
+}
+.section__four__image img {
+    width: 80vw;
+    position: relative;
+    border-radius: 30px;
+}
+.section__four__logos {
+    display: flex;
+    justify-content: space-around;
+
+}
+.section__four__logos img {
+    width: 15%;
+}
+.about__introduction {
+    width: 80%;
+}
+@media screen and (min-width: 1200px) {
+    .section__four {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    .section__four__main {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 15%;
+        margin: 150px auto;
+    }
+    .section__four__text h1 {
+        font-size: 3rem;
+    }
+    .section__four__image {
+        width: 50%;
+    }.section__four__image img {
+        width: 100%;
+    }
+    .section__four__text {
+        display: flex;
+        flex-direction: column;
+    }
+}

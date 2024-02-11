@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Storyboo';
+    src: url('../assets/fonts/Storyboo.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Chillax-Regular';
+    src: url('../assets/fonts/Chillax-Regular.otf') format('opentype');
+}
+body {
+    background-color: #C5B0A3;
+}
+.logo {
+    font-family: 'Storyboo';
+    color: #22333B;
+    text-align: center;
+    margin: 30vh auto;
+}
+#logoOnce {
+    font-size: 0;
+    transition: font-size 1.5s ease-in-out;
+}
+.slogan {
+    font-family: 'Chillax-Regular';
+    font-size: 1.4em;
+    position: relative;
+    top: -30px;
+    letter-spacing: 5px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out 2s;
+}
+.enter {
+    position: relative;
+    text-align: center;
+    color: #C5B0A3;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+    margin: 40px auto;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    background-color: #22333B;
+    border-radius: 30px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out 3s;
+}
+.enter:hover {
+    background-color: #314750;
+}

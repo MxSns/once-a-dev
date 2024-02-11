@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Storyboo';
+    src: url('../assets/fonts/Storyboo.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Chillax-Regular';
+    src: url('../assets/fonts/Chillax-Regular.otf') format('opentype');
+}
+body {
+    margin: 0;
+    background-color: #c5b0a3;
+    font-family: 'Ubuntu', sans-serif;
+    color: #22333B;
+}
+.header__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#logoOnceADev {
+    position: relative;
+    top: 23px;
+    font-family: 'Storyboo';
+    margin: 0 auto;
+    color: #22333B;
+    text-align: center;
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+}
+.header__logo h2 {
+    font-family: 'Chillax-regular';
+    position: relative;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+.section__one h2 {
+    text-align: center;
+    font-family: 'Chillax-regular';
+}
+.section__one__images {
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    gap: 2%;
+}
+.section__one__images img {
+    position: relative;
+    top: 10px;
+    width: 15%;
+    border-radius: 20px;
+    transition: top 2s ease-in-out 0.2s;
+}
+.section__one__introduction p {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0 4%;
+    color: #262626;
+}

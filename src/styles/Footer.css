@@ -1,0 +1,25 @@
+.section__six, footer {
+    margin: 3% 5%;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.socials img {
+    width: 13vw;
+    max-width: 40px;
+    transition: scale 0.3s;
+}
+.socials img:hover {
+    
+    scale: 1.2;
+}
+@media screen and (min-width: 1200px) {
+
+}

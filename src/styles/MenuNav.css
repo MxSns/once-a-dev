@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Storyboo';
+    src: url('../assets/fonts/Storyboo.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Chillax-Regular';
+    src: url('../assets/fonts/Chillax-Regular.otf') format('opentype');
+}
+.menu {
+    background-color: #ad998d;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    left: 5vw;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: width 0.6s ease, height 0.6s ease;
+}
+.menu__selector {
+    background-color: #22333B;
+    border-radius: 15px;
+    width: 35px;
+    height: 35px;
+    position: relative;
+}
+.menu__selector__btn {
+    clip-path: polygon(1% 45%, 45% 45%, 45% 0, 55% 0, 55% 45%, 100% 45%, 100% 55%, 55% 55%, 55% 100%, 45% 100%, 45% 55%, 0 55%);    background-color: #ad998d;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    transition: transform 0.6s ease-in-out;
+}
+.menu__nav {
+    
+    padding: 0 4%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+       
+}
+.nav-item {
+    
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #22333B;
+    font-family: 'Chillax-regular', sans-serif;
+    cursor: pointer;
+}

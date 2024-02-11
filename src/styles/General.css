@@ -1,0 +1,58 @@
+.lorem__button--yellow {    
+    background-color: #22333B;
+    border-radius: 50px;
+    color: #C5B0A3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 20px;
+    padding: 12px 38px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+}
+.lorem__button--black {    
+    background-color: #262626;
+    border-radius: 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 70px 20px;
+    padding: 12px 38px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+}
+@media screen and (min-width:1020px) {
+    .lorem__button--black {
+        width: 200px;
+    }
+    .lorem__button--white {
+        width: 200px;
+    }
+    .lorem__button--yellow {
+        width: 200px;
+    }
+}
+.lorem__button--white {
+    background-color: #fff;
+    border-radius: 50px;
+    color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 12px 38px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+}
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+}
+.h--white {
+    color: #fff;
+}

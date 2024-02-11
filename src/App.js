@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import WelcomeScreen from './components/WelcomeScreen';
+import HomeScreen from './components/HomeScreen';
+import SectionTwo from './components/SectionTwo';
+import SectionThree from './components/SectionThree';
+import SectionFour from './components/SectionFour';
+import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
 
-function App() {
+
+const App = () => {
+  const [showSplash, setShowSplash] = useState(true);
+
+  const handleStartClick = () => {
+    setShowSplash(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+      {showSplash ? (
+        <WelcomeScreen onClick={handleStartClick} />
+      ) : (
+        <>
+        <HomeScreen />
+        <SectionTwo />
+        <SectionThree />
+        <SectionFour />
+        <ContactForm />
+        <Footer />
+        </>
+        
+      )}
     </div>
   );
-}
+};
 
 export default App;
