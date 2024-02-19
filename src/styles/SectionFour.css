@@ -2,9 +2,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    padding: 150px auto;
+    padding:  auto;
 }
 .section__four::before {
     content: "";
@@ -26,13 +25,20 @@ clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0% 100%);
     position: relative;
     border-radius: 30px;
 }
-.section__four__logos {
-    display: flex;
-    justify-content: space-around;
 
+.section__four__logos {
+    margin: 40px 4%;
 }
-.section__four__logos img {
-    width: 15%;
+.section__four__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 100px auto;
+    gap: 20vw;
+    font-size: 1.5em;
+}
+.section__four__img {
+    width: 20%;
 }
 .about__introduction {
     width: 80%;

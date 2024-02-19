@@ -19,6 +19,15 @@ const SectionFour = () => {
     const handleClick = () => {
         setAboutIsOpen(!aboutIsOpen);
     };
+
+    const techstack = [
+        {id: 1, img: htmlLogo, text:'Best HTML practices to increase your SEO'},
+        {id: 2, img: cssLogo, text:'CSS3 techniques for responsive and visually stunning web designs'},
+        {id: 3, img: sassLogo, text:'Leveraging SaSS for efficient, scalable, and maintainable CSS coding'},
+        {id: 4, img: jsLogo, text:'Unlocking interactive and dynamic user experiences with JavaScript'},
+        {id: 5, img: reactLogo, text:'React best practices for building fast and reusable UI components'},
+    ];
+
     return (
       <Element name="tech-stack">
       
@@ -32,11 +41,14 @@ const SectionFour = () => {
                 </div>
             </div>
             <div className="section__four__logos">
-                <img src={htmlLogo} alt="Logo html" />
-                <img src={cssLogo} alt="CSS" />
-                <img src={sassLogo} alt="Sass" />
-                <img src={jsLogo} alt="JavaScript" />
-                <img src={reactLogo} alt="React" />
+                <ul>
+                    {techstack.map(stack => (
+                        <li className="section__four__item" key={stack.id}>
+                            <img src={stack.img} alt={stack.text} className="section__four__img" />
+                            <span>{stack.text}</span>
+                        </li>
+                    ))}
+                </ul>
             </div>
             
             <div className="about__introduction">
