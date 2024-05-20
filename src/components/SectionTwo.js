@@ -3,8 +3,9 @@ import { Element } from 'react-scroll';
 import ReactPlayer from 'react-player';
 import '../styles/General.css';
 import '../styles/SectionTwo.css';
-import devPic from '../assets/images/devAtWork.png';
+import devPic from '../assets/images/devAtWork.webp';
 import whiteArrow from '../assets/images/regular--arrow--right--white.svg';
+import presentationFr from '../assets/videos/secondeVideo1080.mp4';
 import TypeWriter from '../components/TypeWriter';
 
 
@@ -15,7 +16,7 @@ const SectionTwo = () => {
     const handleClick = () => {
         setAboutIsOpen(!aboutIsOpen);
     };
-       
+
     return (
         <Element name="about">
 
@@ -26,38 +27,36 @@ const SectionTwo = () => {
                     <img src= {devPic} alt="Web dev set up"/>
                 </div>
                 <div className="section__two__text">
-                <h1>Hey ! I'm Max, and I'm a developer <TypeWriter className="typeWriterContainer" /></h1>
-                    
-                    <p>My work is a fusion of artistry and precision, with a primary focus on two critical aspects of web development: SEO and accessibility.</p>
-                    <p>I believe in building not just visually stunning websites, but also ones that are discoverable and inclusive. By optimizing for search engines, I ensure that your content reaches its intended audience, maximizing its impact. Simultaneously, my dedication to accessibility means that every user, regardless of ability, can navigate and engage with your site seamlessly.</p>
+                <h1>Hello ! Je suis Maxime, developpeur: <TypeWriter className="typeWriterContainer" /></h1>
+
+                    <p>Mon approche allie originalité et expertise technique, en mettant l'accent sur deux aspects essentiels du développement web: le référencement naturel et l'accessibilité.</p>
+                    <p>Je m'efforce de créer des sites web à la fois esthétiques, accessibles et optimisés pour le référencement. </p>
+                    <p>En améliorant sa visibilité sur les moteurs de recherche, je m'assure que votre contenu touche son public cible, maximisant ainsi son efficacité. <br></br>En parallèle, ma spécialisation dans l'accessibilité garantit une navigation fluide pour tous les utilisateurs, quels que soient leurs besoins.</p>
                 </div>
             </div>
             <div className="about">
                     <div className="lorem__button--black" id="select" onClick={handleClick}>
-                        <p><strong>About me</strong></p>
+                        <p><strong>à propos</strong></p>
                         <img src={whiteArrow} alt="targetting arrow" />
                     </div>
                     <div className={`about__me ${aboutIsOpen ? 'open' : ''}`}>
                     {aboutIsOpen && (
-                        
+
                         <ReactPlayer
-                            url='https://youtu.be/dQw4w9WgXcQ?si=Z3YJCNPiIwP0rD2f'
+                            url={presentationFr}
                             playing={true}
                             volume={0.5}
                             width='80%'
                             height='80%'
                         />
-                        
-                        
+
                      )}
                     </div>
                 </div>
-            
-            
-        </section> 
+
+        </section>
     </div>
     </Element>
     )
-    
 };
 export default SectionTwo;

@@ -75,6 +75,11 @@
     display: flex;
     justify-content: space-around;
 }
+/*
+.texteAccroche {
+    text-align: justify;
+}
+*/
 @media screen and (min-width: 1200px) {
     
     .section__three__main {
@@ -136,5 +141,6 @@
     .conseq__text {
         padding: 0 70px;
     }
+    
     
 }

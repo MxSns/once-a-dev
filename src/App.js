@@ -16,6 +16,7 @@ const App = () => {
   };
 
   return (
+    /*
       <div>
       {showSplash ? (
         <WelcomeScreen onClick={handleStartClick} />
@@ -31,6 +32,16 @@ const App = () => {
         
       )}
     </div>
+    */
+    <>
+    <HomeScreen />
+    <SectionTwo />
+    <SectionThree />
+    <SectionFour />
+    <ContactForm />
+    <Footer />
+    </>
+
   );
 };
 

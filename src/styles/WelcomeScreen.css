@@ -9,11 +9,11 @@
     src: url('../assets/fonts/Chillax-Regular.otf') format('opentype');
 }
 body {
-    background-color: #C5B0A3;
+    background-color: #22333B;
 }
 .logo {
     font-family: 'Storyboo';
-    color: #22333B;
+    color: #C5B0A3;
     text-align: center;
     margin: 30vh auto;
 }

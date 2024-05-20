@@ -24,7 +24,7 @@ const Footer = () => {
         </section>
     
         <footer>
-            <p>Copyright ©OnceUponADev.</p>
+            <p>Copyright ©OnceUponADev2024.</p>
             <p>Privacy Policy | Terms & Conditions</p>
         </footer>
         </>

@@ -5,7 +5,7 @@ import '../styles/ContactForm.css';
 
 
 const ContactForm = () => {
-  
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -52,12 +52,12 @@ const ContactForm = () => {
 
   return (
     <Element name="contact">
-    
+
     <section className="contact">
     <h1>Contact</h1>
       <form className="contactForm" onSubmit={handleSubmit}>
         <label>
-          Name:<br />
+          Nom:<br />
           <input type="text" name="name" value={formData.name} onChange={handleChange} required />
         </label>
         <br />
@@ -71,14 +71,14 @@ const ContactForm = () => {
           <textarea name="message" value={formData.message} onChange={handleChange} />
         </label>
         <br />
-        <button className='btn' type="submit">Send</button>
+        <button className='btn' type="submit">Envoyer</button>
       </form>
-      
+
       {confirmationMessage && <div className="confirmationMessage">{confirmationMessage}</div>}
     </section>
 
     </Element>
-    
+
   );
 };
 

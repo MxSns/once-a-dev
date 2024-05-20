@@ -4,8 +4,7 @@ import '../styles/General.css';
 
 function TypeWriter() {
     return (
-        
-            
+
                 <Typewriter
                     options={{
                         autoStart: true,
@@ -13,12 +12,9 @@ function TypeWriter() {
                         delay: 70,
                         strings: ["Front-end !", "JavaScript !", "React !"]
                     }}
-                    
+
                 />
-            
-                
-            
-        
+
     )
 }
 
