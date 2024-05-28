@@ -22,13 +22,13 @@ const Footer = () => {
 
             </div>
         </section>
-    
+
         <footer>
             <p>Copyright ©OnceUponADev2024.</p>
             <p>Privacy Policy | Terms & Conditions</p>
         </footer>
         </>
     )
-    
+
 }
 export default Footer;

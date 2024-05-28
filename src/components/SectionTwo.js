@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Element } from 'react-scroll';
 import ReactPlayer from 'react-player';
 import '../styles/General.css';
@@ -11,7 +12,14 @@ import TypeWriter from '../components/TypeWriter';
 
 
 const SectionTwo = () => {
-    const [aboutIsOpen, setAboutIsOpen] = useState(false); 
+
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+
+    const [aboutIsOpen, setAboutIsOpen] = useState(false);
 
     const handleClick = () => {
         setAboutIsOpen(!aboutIsOpen);
@@ -27,16 +35,16 @@ const SectionTwo = () => {
                     <img src= {devPic} alt="Web dev set up"/>
                 </div>
                 <div className="section__two__text">
-                <h1>Hello ! Je suis Maxime, developpeur: <TypeWriter className="typeWriterContainer" /></h1>
+                <h1>{t('hello')} <TypeWriter className="typeWriterContainer" /></h1>
 
-                    <p>Mon approche allie originalité et expertise technique, en mettant l'accent sur deux aspects essentiels du développement web: le référencement naturel et l'accessibilité.</p>
-                    <p>Je m'efforce de créer des sites web à la fois esthétiques, accessibles et optimisés pour le référencement. </p>
-                    <p>En améliorant sa visibilité sur les moteurs de recherche, je m'assure que votre contenu touche son public cible, maximisant ainsi son efficacité. <br></br>En parallèle, ma spécialisation dans l'accessibilité garantit une navigation fluide pour tous les utilisateurs, quels que soient leurs besoins.</p>
+                    <p>{t('section2-1')}</p>
+                    <p>{t('section2-2')} </p>
+                    <p>{t('section2-3')}</p>
                 </div>
             </div>
             <div className="about">
                     <div className="lorem__button--black" id="select" onClick={handleClick}>
-                        <p><strong>à propos</strong></p>
+                        <p><strong>{t('a-propos')}</strong></p>
                         <img src={whiteArrow} alt="targetting arrow" />
                     </div>
                     <div className={`about__me ${aboutIsOpen ? 'open' : ''}`}>

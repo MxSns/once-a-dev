@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Element } from 'react-scroll';
 
 import '../styles/ContactForm.css';
 
 
 const ContactForm = () => {
+
+  const { t, i18n } = useTranslation();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
 
   const [formData, setFormData] = useState({
     name: '',
@@ -57,7 +64,7 @@ const ContactForm = () => {
     <h1>Contact</h1>
       <form className="contactForm" onSubmit={handleSubmit}>
         <label>
-          Nom:<br />
+          {t('nom')}<br />
           <input type="text" name="name" value={formData.name} onChange={handleChange} required />
         </label>
         <br />
@@ -71,7 +78,7 @@ const ContactForm = () => {
           <textarea name="message" value={formData.message} onChange={handleChange} />
         </label>
         <br />
-        <button className='btn' type="submit">Envoyer</button>
+        <button className='btn' type="submit">{t('envoyer')}</button>
       </form>
 
       {confirmationMessage && <div className="confirmationMessage">{confirmationMessage}</div>}

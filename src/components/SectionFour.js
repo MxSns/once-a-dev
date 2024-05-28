@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Element } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 import ReactPlayer from 'react-player';
 import '../styles/General.css';
 import '../styles/SectionFour.css';
@@ -14,6 +15,13 @@ import whiteArrow from '../assets/images/regular--arrow--right--white.svg';
 
 
 const SectionFour = () => {
+
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+
     const [aboutIsOpen, setAboutIsOpen] = useState(false);
 
     const handleClick = () => {
@@ -21,11 +29,11 @@ const SectionFour = () => {
     };
 
     const techstack = [
-        {id: 1, img: htmlLogo, text:'Meilleures pratiques HTML pour améliorer votre référencement SEO.'},
-        {id: 2, img: cssLogo, text:'Techniques CSS3 pour des conceptions web réactives et visuellement attrayantes.'},
-        {id: 3, img: sassLogo, text:'Maitrise SaSS pour un code CSS efficace, évolutif et facile à maintenir.'},
-        {id: 4, img: jsLogo, text:'Expertise JavaScript pour des expériences utilisateurs interactives et dynamiques.'},
-        {id: 5, img: reactLogo, text:"Des applications développées sous React pour créer des composants d'interface performants et réutilisables. "},
+        {id: 1, img: htmlLogo, text: t('html')},
+        {id: 2, img: cssLogo, text: t('css')},
+        {id: 3, img: sassLogo, text:t('sass')},
+        {id: 4, img: jsLogo, text:t('javascript')},
+        {id: 5, img: reactLogo, text:t('react')},
     ];
 
     return (

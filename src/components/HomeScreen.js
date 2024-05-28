@@ -1,14 +1,23 @@
 import React, { useEffect } from 'react';
 import { Element } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 import '../styles/HomeScreen.css';
 import pic1 from '../assets/images/pic1.webp';
 import pic2 from '../assets/images/pic2.webp';
 import pic3 from '../assets/images/pic3.webp';
 import pic4 from '../assets/images/pic4.webp';
 import pic5 from '../assets/images/pic5.webp';
+import fr from '../assets/images/fr.svg';
+import gb from '../assets/images/gb.svg';
 import MenuNav from './MenuNav';
 
 const HomeScreen = () => {
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+
     useEffect(() => {
         setTimeout(() => {
             imgMove();
@@ -34,6 +43,10 @@ const HomeScreen = () => {
                 <h1 id="logoOnceADev">Once Upon A Dev</h1>
                 <h2>Web Design Paris</h2>
             </div>
+            <div className="flags">
+                <img src={gb} alt="english language" onClick={() => changeLanguage('en')} />
+                <img src={fr} alt="french language" onClick={() => changeLanguage('fr')} />
+            </div>
         </header>
         <MenuNav />
 
@@ -48,7 +61,7 @@ const HomeScreen = () => {
 
                 </div>
                 <div className="section__one__introduction">
-                    <p>Elaborons ensemble la solution numérique qui incarnera votre vision, et votre identité !</p>
+                    <p>{t('introduction')}</p>
                 </div>
             </section>
         </main>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './components/i18n';
 import WelcomeScreen from './components/WelcomeScreen';
 import HomeScreen from './components/HomeScreen';
 import SectionTwo from './components/SectionTwo';
@@ -29,7 +30,6 @@ const App = () => {
         <ContactForm />
         <Footer />
         </>
-        
       )}
     </div>
     */

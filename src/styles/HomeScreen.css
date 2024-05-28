@@ -36,6 +36,22 @@ body {
     font-weight: lighter;
     letter-spacing: 3px;
 }
+.flags {
+    position: absolute;
+    right: 30px;
+}
+.flags img {
+    width: 30px;
+    margin-left:10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media screen and (min-width: 980px) {
+    .flags {
+        top: 50px;
+    }
+}
+
 .section__one h2 {
     text-align: center;
     font-family: 'Chillax-regular';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Element } from 'react-scroll';
-
+import { useTranslation } from 'react-i18next';
 import '../styles/General.css';
 import '../styles/SectionThree.css';
 import seo from '../assets/images/seo.png';
@@ -10,6 +10,13 @@ import reactApp from '../assets/images/react-2.svg';
 import maskedCoder from '../assets/images/mypfp.webp';
 
 const SectionThree = () => {
+
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+
     return (
 
             <Element name="services">
@@ -17,24 +24,23 @@ const SectionThree = () => {
             <div className="section__three__main">
                 <div className="section__three__intro">
                     <p className="section__three__intro__textYellow">
-                    Parce que votre communication digitale est au coeur de votre réussite, 
+                    {t('section3-1')}
                     </p>
-                    <h1 className="h--white">Je propose une expertise dans les techniques de développement web les plus performantes.
-                    </h1>
+                    <h1 className="h--white">{t('section3-2')}</h1>
 
                 </div>
                 <div className="section__three__container__nb">
                     <div className="section__three__container__nb--one">
                         <div className="conseq__container__white">
                             <img className="nb__icon" src={seo} alt="SEO"/>
-                            <p className="nb__rank">Optimisation SEO<span className="yellow">.</span></p>
-                            <p className="nb__rank__title">Boostez votre visibilité et grimpez dans les résultats de recherche grâce à une stratégie SEO sur mesure.</p>
+                            <p className="nb__rank">{t('SEO-1')}<span className="yellow">.</span></p>
+                            <p className="nb__rank__title">{t('SEO-2')}</p>
 
                         </div>
                         <div className="conseq__container__yellow">
                             <img className="nb__icon" src={accessibility} alt="Accessibility"/>
-                            <p className="nb__rank">Accessibilité<span className="white">.</span></p>
-                            <p className="nb__rank__title">J'élabore des solutions web qui répondent aux normes d'accessibilité les plus élevées, pour rendre votre contenu accessible à tous.</p>
+                            <p className="nb__rank">{t('accessibility-1')}<span className="white">.</span></p>
+                            <p className="nb__rank__title">{t('accessibility-2')}</p>
 
                         </div>
                     </div>
@@ -43,13 +49,13 @@ const SectionThree = () => {
                         <div className="conseq__container__white">
                             <img className="nb__icon" src={eCommerce} alt="eCommerce"/>
                             <p className="nb__rank">eCommerce<span className="yellow">.</span></p>
-                            <p className="nb__rank__title">Ayant suivi une formation eCommerce, je vous accompagne dans la conception d'une boutique en ligne qui converti !</p>
+                            <p className="nb__rank__title">{t('ecommerce')}</p>
 
                         </div>
                         <div className="conseq__container__yellow">
                             <img className="nb__icon" src={reactApp} alt="React developement"/>
                             <p className="nb__rank">Applications React.js<span className="white">.</span></p>
-                            <p className="nb__rank__title">Spécialisé dans React.js, je propose des applications performantes et maintenables pour une UX optimale.</p>
+                            <p className="nb__rank__title">{t('react')}</p>
 
                         </div>
                     </div>
@@ -60,8 +66,8 @@ const SectionThree = () => {
 
                     <img src={maskedCoder} alt="profile pic"/>
                     <div className="conseq__text">
-                        <h1>Développons ensemble une stratégie web gagnante !!</h1>
-                        <p className="texteAccroche">Formé au design UI-UX, au eCommerce et au développement frontend sous React.js, mon travail se focalise sur trois axes: performance, accessibilité et expérience utilisateur. Des interfaces immersives et réactives, une stratégie SEO adaptée, pour booster votre visibilité en ligne !</p>
+                        <h1>{t('strategie')}</h1>
+                        <p className="texteAccroche">{t('strategie-2')}</p>
                         <p>Maxime S.</p>
                     </div>
                 </div>
