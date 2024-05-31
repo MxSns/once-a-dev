@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './components/i18n';
-import WelcomeScreen from './components/WelcomeScreen';
+import { Link } from 'react-scroll';
+import upArrow from './assets/images/up-circle.svg';
+import './styles/General.css';
 import HomeScreen from './components/HomeScreen';
 import SectionTwo from './components/SectionTwo';
 import SectionThree from './components/SectionThree';
@@ -35,11 +37,13 @@ const App = () => {
     */
     <>
     <HomeScreen />
+    <Link to="home" smooth={true} duration={700} className="upArrow"><img src={upArrow}></img></Link>
     <SectionTwo />
     <SectionThree />
     <SectionFour />
     <ContactForm />
     <Footer />
+
     </>
 
   );

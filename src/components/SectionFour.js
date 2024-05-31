@@ -60,7 +60,7 @@ const SectionFour = () => {
             </div>
 
             <div className="about__introduction">
-                    <div className="lorem__button--black" id="select" onClick={handleClick}>
+                    <div className="button--black" id="select" onClick={handleClick}>
                         <p><strong>About my work</strong></p>
                         <img src={whiteArrow} alt="targetting arrow" />
                     </div>

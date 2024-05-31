@@ -30,6 +30,8 @@ i18n
                     "react": "React development solutions to create performant and reusable interface components.",
                     "nom": "name",
                     "envoyer": "send",
+                    "home" : "Home",
+                    "about": "About",
                 }
             },
             fr: {
@@ -57,10 +59,12 @@ i18n
                     "react": "Des applications développées sous React pour créer des composants d'interface performants et réutilisables.",
                     "nom": "Nom",
                     "envoyer": "Envoyer",
+                    "home" : "Accueil",
+                    "about": "A propos",
                 }
             }
         },
-        lng: "en",
+        lng: "fr",
         fallbackLng: "en",
         interpolation: {
             escapeValue: false

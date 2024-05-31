@@ -43,8 +43,8 @@ const SectionTwo = () => {
                 </div>
             </div>
             <div className="about">
-                    <div className="lorem__button--black" id="select" onClick={handleClick}>
-                        <p><strong>{t('a-propos')}</strong></p>
+                    <div className="button--black" id="select" onClick={handleClick}>
+                        <p><strong>{t('about')}</strong></p>
                         <img src={whiteArrow} alt="targetting arrow" />
                     </div>
                     <div className={`about__me ${aboutIsOpen ? 'open' : ''}`}>

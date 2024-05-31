@@ -4,7 +4,6 @@
     background-color: #ad998d;
     -webkit-clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
 clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
-    
 }
 .section__two__main {
     display: flex;
@@ -22,7 +21,7 @@ clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
     width: 80vw;
     position: relative;
     border-radius: 30px;
-    
+
 }
 .typeWriterContainer {
     display: inline;
@@ -37,7 +36,7 @@ clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
     transition: height 0.7s ease-in-out;
     overflow: hidden;
     height: 0;
-    
+
 }
 .about__me.open {
     height: 400px;

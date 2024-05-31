@@ -1,4 +1,4 @@
-.lorem__button--yellow {    
+.lorem__button--yellow {
     background-color: #22333B;
     border-radius: 50px;
     color: #C5B0A3;
@@ -11,7 +11,7 @@
     font-weight: 700;
     line-height: normal;
 }
-.lorem__button--black {    
+.button--black {
     background-color: #262626;
     border-radius: 50px;
     color: #fff;
@@ -24,8 +24,19 @@
     font-weight: 700;
     line-height: normal;
 }
+.upArrow {
+    width: 20px;
+    z-index: 5;
+    position: fixed;
+    right: 100px;
+    bottom: 30px;
+    opacity: 0.4;
+}
+.upArrow:hover {
+    opacity: 0.7;
+}
 @media screen and (min-width:1020px) {
-    .lorem__button--black {
+    .button--black {
         width: 200px;
     }
     .lorem__button--white {
