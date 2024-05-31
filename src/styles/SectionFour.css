@@ -31,14 +31,15 @@ clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0% 100%);
 }
 .section__four__item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    margin: 100px auto;
-    gap: 20vw;
+    gap: 40px;
     font-size: 1.5em;
+    padding: 4%;
 }
 .section__four__img {
-    width: 20%;
+    width: 12%;
+    padding-top: 30px;;
 }
 .about__introduction {
     width: 80%;
@@ -54,6 +55,14 @@ clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0% 100%);
         align-items: center;
         gap: 15%;
         margin: 150px auto;
+    }
+    .section__four__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 150px;
+        font-size: 1.5em;
+        padding: 4%;
     }
     .section__four__text h1 {
         font-size: 3rem;
