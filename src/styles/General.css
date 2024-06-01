@@ -45,6 +45,15 @@
     .lorem__button--yellow {
         width: 200px;
     }
+
+    .upArrow {
+        width: 20px;
+        z-index: 5;
+        position: fixed;
+        right: 100px;
+        bottom: 30px;
+        opacity: 0.4;
+    }
 }
 .lorem__button--white {
     background-color: #fff;

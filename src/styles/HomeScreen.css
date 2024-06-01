@@ -46,12 +46,16 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-@media screen and (min-width: 980px) {
-    .flags {
-        top: 50px;
-    }
+.section__one__images img {
+    position: relative;
+    top: 10px;
+    max-width: 15%;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: top 2s ease-in-out 0.2s;
 }
-
 .section__one h2 {
     text-align: center;
     font-family: 'Chillax-regular';
@@ -62,16 +66,28 @@ body {
     margin: 100px auto;
     gap: 2%;
 }
-.section__one__images img {
-    position: relative;
-    top: 10px;
-    width: 15%;
-    border-radius: 20px;
-    transition: top 2s ease-in-out 0.2s;
-}
+
 .section__one__introduction p {
     font-size: 1.5em;
     text-align: center;
     padding: 0 4%;
     color: #22333b;
 }
+
+@media screen and (min-width: 980px) {
+    .flags {
+        top: 50px;
+    }
+    .section__one__images img {
+        position: relative;
+        top: 10px;
+        width: 15%;
+        height: 60vh;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 20px;
+        transition: top 2s ease-in-out 0.2s;
+    }
+}
+
+
