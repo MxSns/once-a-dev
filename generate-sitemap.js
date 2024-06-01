@@ -1,19 +1,32 @@
 const fs = require('fs');
 const path = require('path');
-const sm = require('sitemap');
+const { SitemapStream, streamToPromise } = require('sitemap');
 
 // Fonction pour générer le sitemap
-function generateSitemap() {
-  const sitemap = sm.createSitemap({
-    hostname: 'https://www.onceuponadev.com',
-    cacheTime: 600000, // 600 sec - cache purge period
-    urls: [
-      { url: '/', changefreq: 'daily', priority: 1.0 },
-      // ici on ajoutera les pages supplémentaires quand elles auront été faites
-    ],
+async function generateSitemap() {
+  const links = [
+    { url: '/', changefreq: 'daily', priority: 1.0 },
+    { url: '/about', changefreq: 'monthly', priority: 0.7 },
+    { url: '/contact', changefreq: 'monthly', priority: 0.7 },
+    // Ajoutez d'autres pages ici si nécessaire
+  ];
+
+  const sitemapStream = new SitemapStream({ hostname: 'https://example.com' }); // Remplacez par l'URL de votre site
+
+  const writeStream = fs.createWriteStream(path.resolve('./public/sitemap.xml'));
+
+  sitemapStream.pipe(writeStream);
+
+  links.forEach(link => sitemapStream.write(link));
+  sitemapStream.end();
+
+  writeStream.on('finish', () => {
+    console.log('Sitemap generated successfully!');
   });
 
-  fs.writeFileSync(path.resolve('./public/sitemap.xml'), sitemap.toString());
+  writeStream.on('error', (err) => {
+    console.error('Error writing sitemap:', err);
+  });
 }
 
-generateSitemap();
+generateSitemap().catch(console.error);

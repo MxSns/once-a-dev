@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './components/i18n';
 import { Link } from 'react-scroll';
 import upArrow from './assets/images/up-circle.svg';
@@ -12,29 +12,10 @@ import Footer from './components/Footer';
 
 
 const App = () => {
-  const [showSplash, setShowSplash] = useState(true);
 
-  const handleStartClick = () => {
-    setShowSplash(false);
-  };
 
   return (
-    /*
-      <div>
-      {showSplash ? (
-        <WelcomeScreen onClick={handleStartClick} />
-      ) : (
-        <>
-        <HomeScreen />
-        <SectionTwo />
-        <SectionThree />
-        <SectionFour />
-        <ContactForm />
-        <Footer />
-        </>
-      )}
-    </div>
-    */
+
     <>
     <HomeScreen />
     <Link to="home" smooth={true} duration={700} className="upArrow"><img src={upArrow}></img></Link>
