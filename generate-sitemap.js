@@ -6,12 +6,10 @@ const { SitemapStream, streamToPromise } = require('sitemap');
 async function generateSitemap() {
   const links = [
     { url: '/', changefreq: 'daily', priority: 1.0 },
-    { url: '/about', changefreq: 'monthly', priority: 0.7 },
-    { url: '/contact', changefreq: 'monthly', priority: 0.7 },
     // Ajoutez d'autres pages ici si nécessaire
   ];
 
-  const sitemapStream = new SitemapStream({ hostname: 'https://example.com' }); // Remplacez par l'URL de votre site
+  const sitemapStream = new SitemapStream({ hostname: 'https://www.onceuponadev.com' }); // Remplacez par l'URL de votre site
 
   const writeStream = fs.createWriteStream(path.resolve('./public/sitemap.xml'));
 
