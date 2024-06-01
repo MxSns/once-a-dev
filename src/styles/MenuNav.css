@@ -24,6 +24,7 @@
     width: 35px;
     height: 35px;
     position: relative;
+    cursor: pointer;
 }
 .menu__selector__btn {
     clip-path: polygon(1% 45%, 45% 45%, 45% 0, 55% 0, 55% 45%, 100% 45%, 100% 55%, 55% 55%, 55% 100%, 45% 100%, 45% 55%, 0 55%);    background-color: #ad998d;

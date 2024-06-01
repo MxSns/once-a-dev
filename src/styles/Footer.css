@@ -3,7 +3,7 @@
 }
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 .socials {
@@ -17,9 +17,13 @@ footer {
     transition: scale 0.3s;
 }
 .socials img:hover {
-    
     scale: 1.2;
 }
 @media screen and (min-width: 1200px) {
-
+    footer {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

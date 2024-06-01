@@ -28,6 +28,7 @@ textarea {
     background-color: #22333B;
     border-radius: 30px;
     overflow: hidden;
+    cursor: pointer;
 }
 .btn:hover {
     background-color: #314750;
