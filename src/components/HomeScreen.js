@@ -36,7 +36,7 @@ const HomeScreen = () => {
         });
     }
     return (
-            <Element name="home">
+            <Element name="home" className="home">
                 <div>
             <header className="header">
             <div className="header__logo">

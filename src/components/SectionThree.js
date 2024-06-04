@@ -31,13 +31,13 @@ const SectionThree = () => {
                 </div>
                 <div className="section__three__container__nb">
                     <div className="section__three__container__nb--one">
-                        <div className="conseq__container__white">
+                        <div className="container__white">
                             <img className="nb__icon" src={seo} alt="SEO"/>
                             <p className="nb__rank">{t('SEO-1')}<span className="yellow">.</span></p>
                             <p className="nb__rank__title">{t('SEO-2')}</p>
 
                         </div>
-                        <div className="conseq__container__yellow">
+                        <div className="container__yellow">
                             <img className="nb__icon" src={accessibility} alt="Accessibility"/>
                             <p className="nb__rank">{t('accessibility-1')}<span className="white">.</span></p>
                             <p className="nb__rank__title">{t('accessibility-2')}</p>
@@ -46,13 +46,13 @@ const SectionThree = () => {
                     </div>
 
                     <div className="section__three__container__nb--two">
-                        <div className="conseq__container__white">
+                        <div className="container__white">
                             <img className="nb__icon" src={eCommerce} alt="eCommerce"/>
                             <p className="nb__rank">eCommerce<span className="yellow">.</span></p>
                             <p className="nb__rank__title">{t('ecommerce')}</p>
 
                         </div>
-                        <div className="conseq__container__yellow">
+                        <div className="container__yellow">
                             <img className="nb__icon" src={reactApp} alt="React developement"/>
                             <p className="nb__rank">Applications React.js<span className="white">.</span></p>
                             <p className="nb__rank__title">{t('react')}</p>
@@ -62,10 +62,10 @@ const SectionThree = () => {
                 </div>
             </div>
 
-                <div className="conseq__container__5">
+                <div className="container__5">
 
                     <img src={maskedCoder} alt="profile pic"/>
-                    <div className="conseq__text">
+                    <div className="container__five__text">
                         <h1>{t('strategie')}</h1>
                         <p className="texteAccroche">{t('strategie-2')}</p>
                         <p>Maxime S.</p>

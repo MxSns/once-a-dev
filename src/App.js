@@ -18,7 +18,7 @@ const App = () => {
 
     <>
     <HomeScreen />
-    <Link to="home" smooth={true} duration={700} className="upArrow"><img src={upArrow}></img></Link>
+    <Link to="home" smooth={true} duration={700} className="upArrow"><img src={upArrow} alt="Back to the home page"></img></Link>
     <SectionTwo />
     <SectionThree />
     <SectionFour />

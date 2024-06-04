@@ -8,6 +8,12 @@
     font-family: 'Chillax-Regular';
     src: url('../assets/fonts/Chillax-Regular.otf') format('opentype');
 }
+@font-face {
+    font-family: 'ubuntu';
+    src: url('../assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     margin: 0;
     background-color: #c5b0a3;
@@ -55,6 +61,7 @@ body {
     object-fit: cover;
     border-radius: 20px;
     transition: top 2s ease-in-out 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .section__one h2 {
     text-align: center;
@@ -72,6 +79,7 @@ body {
     text-align: center;
     padding: 0 4%;
     color: #22333b;
+    font-family: 'ubuntu', sans-serif;
 }
 
 @media screen and (min-width: 980px) {

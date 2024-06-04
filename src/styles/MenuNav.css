@@ -8,6 +8,12 @@
     font-family: 'Chillax-Regular';
     src: url('../assets/fonts/Chillax-Regular.otf') format('opentype');
 }
+@font-face {
+    font-family: 'ubuntu';
+    src: url('../assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 .menu {
     background-color: #ad998d;
     width: 35px;
@@ -36,7 +42,7 @@
     transition: transform 0.6s ease-in-out;
 }
 .menu__nav {
-
+    font-family: 'ubuntu', sans-serif;
     padding: 0 4%;
     display: flex;
     justify-content: space-around;
