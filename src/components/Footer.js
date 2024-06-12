@@ -11,13 +11,13 @@ const Footer = () => {
     return (
         <>
         <section className="section__six">
-            <p>From scratch to SPA, Built on React with love </p>
+            <p>From scratch to SPA, Built on React through insomnia. </p>
             <div className="socials">
-              <Link to="https://github.com/MxSns" target="_blank"><img src={gitLogo} alt="Logo GitHub" /></Link>
-              <Link to="https://www.threads.net/@mxn.dev" target="_blank"><img src={threadsLogo} alt="Logo GitHub" /></Link>
-              <Link to="https://twitter.com/Oz_70th" target="_blank"><img src={twitterLogo} alt="Logo GitHub" /></Link>
-              <Link to="https://www.linkedin.com/in/maxime-sanson-678259310/" target="_blank"><img src={linkdinLogo} alt="Logo GitHub" /></Link>
-              <Link to="https://medium.com/@oz_70" target="_blank"><img src={mediumLogo} alt="Logo GitHub" /></Link>
+              <Link to="https://github.com/MxSns" target="_blank"><img src={gitLogo} alt="lien Github" /></Link>
+              <Link to="https://www.threads.net/@onceuponadev" target="_blank"><img src={threadsLogo} alt="lien threads" /></Link>
+              <Link to="https://twitter.com/Oz_70th" target="_blank"><img src={twitterLogo} alt="lien twitter" /></Link>
+              <Link to="https://www.threads.net/@onceuponadev" target="_blank"><img src={linkdinLogo} alt="lien linkdin" /></Link>
+              <Link to="https://medium.com/@oz_70" target="_blank"><img src={mediumLogo} alt="lien medium" /></Link>
 
 
             </div>

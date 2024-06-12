@@ -29,7 +29,7 @@ const MenuNav = () => {
                     document.querySelector('.menu__nav').style.flexDirection = 'row';
                 } else {
                     document.querySelector('.menu').style.width = '30%';
-                    document.querySelector('.menu').style.height = '280px';
+                    document.querySelector('.menu').style.height = '320px';
                 }
 
             }
@@ -52,6 +52,7 @@ const MenuNav = () => {
                 <Link to="about" smooth={true} duration={700} className="nav-item">{t('about')}</Link>
                 <Link to="services" smooth={true} duration={800} className="nav-item">Services</Link>
                 <Link to="tech-stack" smooth={true} duration={900} className="nav-item">Tech Stack</Link>
+                <a href="https://www.onceuponadev.xyz" className="nav-item">Blog</a>
                 <Link to="contact" smooth={true} duration={1000} className="nav-item">Contact</Link>
             </div>
         </div>
